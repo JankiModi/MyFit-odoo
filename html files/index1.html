@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style1.css">
+
+    <title>MyFit : Your Personal Gym Assistant</title>
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <a href="#home" class="logo"><span>MY</span>FIT</a>
+
+        <div id="menu-btn" class="fas fa-bars"> </div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="body(myFit).html" target="_self">Directory</a>
+            <a href="diet.html">Diet</a>
+        </nav>
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url('/images/home-bg-1.jpg')no-repeat;">
+                    <div class="content">
+                        <span>
+                            be strong,be fit
+                        </span>
+                        <h3>Make yourself stronger than your excuses.</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background:url('/images/home-bg-4.jpg')no-repeat;">
+                    <div class="content">
+                        <span>
+                            be strong,be fit
+                        </span>
+                        <h3>Make yourself stronger than your excuses.</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background:url('/images/home-bg-3.jpg')no-repeat;">
+                    <div class="content">
+                        <span>
+                            be strong,be fit
+                        </span>
+                        <h3>Make yourself stronger than your excuses.</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <div class="image">
+            <img src="/images/about-img.jpg">
+        </div>
+
+        <div class="content">
+            <span>about us</span>
+            <h3 class="title">Everyday is a chance to become better</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis eligendi quo cumque at
+                consequuntur autem! Eveniet numquam mollitia praesentium!</p>
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>
+                        <i class="fas fa-check"></i>body and mind
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, tenetur.</p>
+                </div>
+
+                <div class="box">
+                    <h3>
+                        <i class="fas fa-check"></i>healthy life
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, tenetur.</p>
+                </div>
+
+                <div class="box">
+                    <h3>
+                        <i class="fas fa-check"></i>strategies
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, tenetur.</p>
+                </div>
+
+                <div class="box">
+                    <h3>
+                        <i class="fas fa-check"></i>workout
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, tenetur.</p>
+                </div>
+            </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </section>
+    <!-- about section ends -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <!--==================== CALCULATE ====================-->
+    <section class="calculate section">
+        <div class="calculate__container container grid">
+            <div class="calculate__content">
+                <div class="section__titles">
+                    <h1 class="section__title-border">CALCULATE</h1>
+                    <h1 class="section__title">YOUR BMI</h1>
+                </div>
+                <br> <br>
+                <form action="" class="calculate__form" id="calculate-form">
+                    <div class="calculate__box">
+                        <input type="number" placeholder="Height" class="calculate__input" id="calculate-cm">
+                        <label for="" class="calculate__label">cm</label>
+                    </div>
+                    <div class="calculate__box">
+                        <input type="number" placeholder="Weight" class="calculate__input" id="calculate-kg">
+                        <label for="" class="calculate__label">kg</label>
+                    </div>
+
+                    <button type="submit" class="button button__flex">
+                        Calculate Now <i class="ri-arrow-right-line"></i>
+                    </button>
+                </form>
+
+                <p class="calculate__message" id="calculate-message"></p>
+
+            </div>
+            <div></div>
+        </div>
+    </section>
+    </main>
+    <!-- calculate section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+          <h3>Quick Links</h3>    
+          <a class="links" href="index1.html">Home</a>
+          <a class="links" href="#about">About</a>
+          <a class='links' href="body(myFit).html">Directory</a>
+          <a class='links' href="diet.html">Diet</a>
+
+            
+        </div>
+
+            <div class="box">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i>+919076534789</p>
+                <p><i class="fas fa-phone"></i>+919234526278</p>
+                <p><i class="fas fa-phone"></i>+919873356899</p>
+            </div>
+
+            <div class="box">
+                <h3>Follow us on</h3>
+                <div class="share">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+                    <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- JS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+    <!--=============== EMAIL JS ===============-->
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<section class="content">
+        <div class="container main">
+            <div class="muscle-group">
+                Barbell Bench Press
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <video width="100%" controls>
+                        <source src="male-barbell-bench-press-front.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <div class="col-md-6">
+                    <video width="100%" controls>
+                        <source src="male-barbell-bench-press-front.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ol type="1">
+                        <li> Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.</li>
+                        <li>Lower the bar to your mid chest</li>
+                        <li>Raise the bar until you've locked your elbows.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Second exercise -->
+        <div class="container main">
+            <div class="muscle-group">
+                Push UP
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <video width="100%" controls>
+                        <source src="pushup video.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <div class="col-md-6">
+                    <video width="100%" controls>
+                        <source src="sideview pushup.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ol type="1">
+                        <li> Place your hands firmly on the ground, directly under shoulders.</li>
+                        <li>Flatten your back so your entire body is straight and slowly lower your body</li>
+                        <li> Draw shoulder blades back and down, keeping elbows tucked close to your body.</li>
+                        <li>Exhale as you push back to the starting position.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>

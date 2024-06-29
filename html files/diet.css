@@ -1,0 +1,116 @@
+/* Custom CSS for diet plan section */
+
+body {
+    background: var(--black);
+
+  }
+.container {
+  margin-top: 2rem;
+  /* background-color: rgb(128, 5, 5);
+  color: #FFFFFF; */
+  padding: 12px 0px;
+  font: 36px Roboto; 
+  font-weight: bolder;
+  width:100%;
+}
+
+.card {
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding-left: 50px;
+    padding-right:20px;
+}
+
+.card-body h1 {
+  
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    
+}
+
+.card-body ul {
+    
+    padding-left: 0;
+}
+
+.card-body ul li {
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.btn-danger {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+            .btn-primary {
+                width: auto; 
+            }
+            .btn-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .btn-container .col-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        
+          .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 9%;
+            z-index: 1000;
+            background: var(--black);
+          
+            .logo {
+              font-weight: bolder;
+              color: var(--white);
+              font-size: 3rem;
+              text-decoration: none;
+          
+              span {
+                color: var(--red);
+              }
+            }
+          
+            .navbar a {
+              display: inline-block;
+              padding: 1.5rem 2rem;
+              font-size: 1.7rem;
+              color: var(--white);
+              text-decoration: none;
+          
+              &:hover {
+                background: var(--red);
+              }
+            }
+          }
+          
+          #menu-btn {
+            font-size: 3rem;
+            color: var(--white);
+            cursor: pointer;
+            display: none;
+          }
+          
+          
+          
+               
