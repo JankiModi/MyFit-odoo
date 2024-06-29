@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
+:root {
+    --red: #f00;
+    --black: #000;
+    --white: #fff;
+    --light-white: #aaa;
+    --light-bg: #111;
+  }
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    /* text-transform: capitalize; */
+    transition: all .2s linear;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+  
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: black;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: red;
+    }
+  }
+  
+  body {
+    background: black;
+  }
+  
+  section {
+    padding: 5rem 9%;
+  }
+  
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .header {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    z-index: 1000;
+    background: black;
+  
+   .logo {
+      font-weight: bolder;
+      color: white;
+      font-size: 3rem;
+      text-decoration: none;
+  
+      span {
+        color: red;
+      }
+    }
+  
+    .navbar1 a {
+      display: inline-block;
+      padding: 1.5rem 2rem;
+      font-size: 1.7rem;
+      color: white;
+      text-decoration: none;
+  
+      &:hover {
+        background: red;
+      }
+    }
+  }
+  
+  #menu-btn {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media(max-width:991px) {
+    html {
+      font-size: 55%;
+    }
+  
+    .header {
+      padding: 0 2rem;
+    }
+  
+    section {
+      padding: 3rem 2rem;
+    }
+  
+    .home .slide {
+      padding: 2rem 5%;
+  
+      .content {
+        width: 50rem;
+  
+        h3 {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+  
+  @media(max-width:768px) {
+    #menu-btn {
+      display: inline-block;
+  
+      &.fa-times {
+        transform: rotate(180deg);
+      }
+    }
+  
+    /* .header {
+      padding: 2rem;
+  
+      .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background:rgb(245, 246, 245);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  
+        &.active {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+  
+        a {
+          display: block;
+          font-size: 2rem;
+        }
+      }
+    } */
+  
+    .about {
+      gap: 3rem;
+  
+      .image {
+        margin-top: 5rem;
+      }
+  
+      .content .title {
+        font-size: 3rem;
+      }
+    }
+  }
+  
+  @media(max-width:450px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  .swiper-pagination-bullet {
+    height: 2rem;
+    width: 2rem;
+    background: white;
+    border-radius: 0;
+  
+    &.swiper-pagination-bullet-active {
+      background: red;
+  }
+}
+
+.trainers .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trainers .content .frame {
+    position: relative;
+    width: calc(25% - 2px); /* Adjust width for four frames side by side with margin */
+    padding: 30px 30px 40px 30px;
+    box-shadow: 0 10px 15px rgba(144, 0, 0, 0.5);
+    margin: 10px;
+    background: black;
+    border: red;
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+.trainers .content .box {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.trainers .content .box img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s ease-in;
+}
+
+.trainers .content .box:hover img {
+    transform: scale(1.08);
+}
+
+.trainers .content .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.trainers .content .headline button {
+    height: 22px;
+    width: 22px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    line-height: 22px;
+}
+
+
+
+.trainers .content .headline .title {
+    color: red;
+    font-size: 2.5rem;
+}
+
+.trainers .content p {
+    font-size: 0.8em;
+    position: relative;
+    bottom: 5px;
+}
+
+.trainers .content a {
+    top: 20px;
+    color: red;
+    background: transparent;
+    padding: 5px 20px;
+    border: 1.5px solid red;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+.trainers .content a:hover {
+    color: white;
+    background: red;
+}

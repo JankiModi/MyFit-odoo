@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/worktype.css">
+    <!-- <link rel="stylesheet" href="/css/style1.css"> -->
+    <!-- <link rel="stylesheet" href="diet.css"> -->
+    <!-- <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="script.js"> -->
+    <title>Diet Plan</title>
+    
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <a href="index1.html#home" class="logo"><span>MY</span>FIT</a>
+        <div id="menu-btn" class="fas fa-bars"> </div>
+        <nav class="navbar1">
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="/userProfile/<%=newUser._id%>">User Profile</a>
+            <a href="/user/<%=newUser._id%>/plan">Workout Plans</a>
+            <a href="/user/directory/body(myFit).html" target="_self">Directory</a>
+            <a href="/user/<%=newUser._id%>/diet">Diet</a>
+            </nav>
+    </header>
+    <!-- header section ends -->
+     <section>
+    <div class="container-fluid-fluid">
+        <h1 class="mt-5 mb-4 text-center head text-light">Workout Plan</h1>
+
+        <div class="row justify-content-center mb-4">
+            <div class="col-auto">
+                <button class="btn btn-danger" type="button" onclick="showContent('mon-content')">Muscle Gain</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-danger" type="button" onclick="showContent('tue-content')">Weight Loss</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-danger" type="button" onclick="showContent('wed-content')">Strength
+                    Training</button>
+            </div>
+        </div>
+
+        <div class="collapse content show" id="mon-content">
+            <section>
+                <div class="container-fluid-fluid">
+                    <h1 style="text-align: center; font-weight: bold;">Muscle Gain Workout Plan</h1>
+
+                    <!-- <h2>Overview</h2>
+                    <p>This workout plan is designed to help you build muscle mass through a combination of compound and
+                        isolation exercises. The plan is structured to target different muscle groups each day, allowing
+                        for adequate recovery time and maximizing muscle growth.</p> -->
+
+                    <h2 style="background-color: white; padding: 1rem;">Weekly Schedule</h2>
+
+                    <h3>Day 1: Chest & Triceps</h3>
+                    <ul>
+                        <li><strong>Bench Press:</strong> 4 sets of 8-10 reps</li>
+                        <li><strong>Incline Dumbbell Press:</strong> 4 sets of 10-12 reps</li>
+                        <li><strong>Chest Flyes:</strong> 3 sets of 12-15 reps</li>
+                        <li><strong>Tricep Dips:</strong> 3 sets of 8-10 reps</li>
+                        <li><strong>Tricep Pushdowns:</strong> 3 sets of 10-12 reps</li>
+                    </ul>
+
+                    <h3>Day 2: Back & Biceps</h3>
+                    <ul>
+                        <li><strong>Deadlift:</strong> 4 sets of 6-8 reps</li>
+                        <li><strong>Pull-Ups:</strong> 4 sets of 8-10 reps</li>
+                        <li><strong>Bent Over Rows:</strong> 3 sets of 10-12 reps</li>
+                        <li><strong>Bicep Curls:</strong> 3 sets of 10-12 reps</li>
+                        <li><strong>Hammer Curls:</strong> 3 sets of 12-15 reps</li>
+                    </ul>
+
+                    <h3>Day 3: Rest or Active Recovery</h3>
+
+                    <h3>Day 4: Legs & Core</h3>
+                    <ul>
+                        <li><strong>Squats:</strong> 4 sets of 8-10 reps</li>
+                        <li><strong>Leg Press:</strong> 4 sets of 10-12 reps</li>
+                        <li><strong>Leg Curls:</strong> 3 sets of 12-15 reps</li>
+                        <li><strong>Calf Raises:</strong> 4 sets of 15-20 reps</li>
+                        <li><strong>Planks:</strong> 3 sets of 1-minute holds</li>
+                    </ul>
+
+                    <h3>Day 5: Shoulders & Abs</h3>
+                    <ul>
+                        <li><strong>Overhead Press:</strong> 4 sets of 8-10 reps</li>
+                        <li><strong>Lateral Raises:</strong> 4 sets of 12-15 reps</li>
+                        <li><strong>Front Raises:</strong> 3 sets of 12-15 reps</li>
+                        <li><strong>Shrugs:</strong> 3 sets of 10-12 reps</li>
+                        <li><strong>Hanging Leg Raises:</strong> 3 sets of 12-15 reps</li>
+                    </ul>
+
+                    <h3>Day 6: Full Body Workout</h3>
+                    <ul>
+                        <li><strong>Clean and Press:</strong> 4 sets of 8-10 reps</li>
+                        <li><strong>Pull-Ups:</strong> 3 sets of 8-10 reps</li>
+                        <li><strong>Push-Ups:</strong> 3 sets of 15-20 reps</li>
+                        <li><strong>Bodyweight Squats:</strong> 4 sets of 15-20 reps</li>
+                        <li><strong>Russian Twists:</strong> 3 sets of 20 reps per side</li>
+                    </ul>
+
+                    <h3>Day 7: Rest or Active Recovery</h3>
+
+                    <h2>Tips for Success</h2>
+                    <div class="tips">
+                        <p><strong>Warm-Up and Cool Down:</strong> Always warm up for 5-10 minutes before starting your
+                            workout and cool down for 5-10 minutes afterward.</p>
+                        <p><strong>Progressive Overload:</strong> Gradually increase the weight you lift to continue
+                            challenging your muscles.</p>
+                        <p><strong>Proper Form:</strong> Focus on maintaining proper form to avoid injuries and maximize
+                            muscle engagement.</p>
+                        <p><strong>Nutrition:</strong> Ensure you are consuming enough protein and calories to support
+                            muscle growth.</p>
+                        <p><strong>Rest:</strong> Allow your muscles to recover by getting adequate sleep and rest
+                            between workouts.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="collapse content" id="tue-content">
+            <section>
+                <div class="container-fluid">
+                    <h1 style="text-align: center; font-weight: bold;">Weight Loss Workout Plan</h1>
+
+                    <!-- <h2>Overview</h2>
+                    <p>This workout plan is designed to help you lose weight through a combination of cardio and
+                        strength training exercises. The plan includes a mix of high-intensity interval training (HIIT)
+                        and steady-state cardio, along with resistance training to boost your metabolism and burn
+                        calories.</p> -->
+
+                    <h2 style="background-color: white;""> Weekly Schedule</h2>
+
+                    <h3>Day 1: Full Body HIIT</h3>
+                    <ul>
+                        <li><strong>Jumping Jacks:</strong> 3 sets of 1 minute</li>
+                        <li><strong>Burpees:</strong> 3 sets of 15 reps</li>
+                        <li><strong>Mountain Climbers:</strong> 3 sets of 1 minute</li>
+                        <li><strong>Bodyweight Squats:</strong> 3 sets of 20 reps</li>
+                        <li><strong>Push-Ups:</strong> 3 sets of 15 reps</li>
+                    </ul>
+
+                    <h3>Day 2: Cardio & Core</h3>
+                    <ul>
+                        <li><strong>Running or Cycling:</strong> 30-45 minutes</li>
+                        <li><strong>Planks:</strong> 3 sets of 1 minute</li>
+                        <li><strong>Bicycle Crunches:</strong> 3 sets of 20 reps per side</li>
+                        <li><strong>Russian Twists:</strong> 3 sets of 20 reps per side</li>
+                        <li><strong>Leg Raises:</strong> 3 sets of 15 reps</li>
+                    </ul>
+
+                    <h3>Day 3: Rest or Active Recovery</h3>
+
+                    <h3>Day 4: Upper Body & Cardio</h3>
+                    <ul>
+                        <li><strong>Dumbbell Bench Press:</strong> 3 sets of 12-15 reps</li>
+                        <li><strong>Bent Over Rows:</strong> 3 sets of 12-15 reps</li>
+                        <li><strong>Shoulder Press:</strong> 3 sets of 12-15 reps</li>
+                        <li><strong>Bicep Curls:</strong> 3 sets of 15 reps</li>
+                        <li><strong>Jump Rope:</strong> 3 sets of 2 minutes</li>
+                    </ul>
+
+                    <h3>Day 5: Lower Body & Core</h3>
+                    <ul>
+                        <li><strong>Bodyweight Squats:</strong> 3 sets of 20 reps</li>
+                        <li><strong>Walking Lunges:</strong> 3 sets of 20 reps per leg</li>
+                        <li><strong>Glute Bridges:</strong> 3 sets of 15 reps</li>
+                        <li><strong>Calf Raises:</strong> 3 sets of 20 reps</li>
+                        <li><strong>Side Planks:</strong> 3 sets of 1 minute per side</li>
+                    </ul>
+
+                    <h3>Day 6: Cardio & Stretching</h3>
+                    <ul>
+                        <li><strong>Running or Cycling:</strong> 30-45 minutes</li>
+                        <li><strong>Yoga or Stretching:</strong> 20-30 minutes</li>
+                    </ul>
+
+                    <h3>Day 7: Rest or Active Recovery</h3>
+
+                    <h2>Tips for Success</h2>
+                    <div class="tips">
+                        <p><strong>Warm-Up and Cool Down:</strong> Always warm up for 5-10 minutes before starting your
+                            workout and cool down for 5-10 minutes afterward.</p>
+                        <p><strong>Hydration:</strong> Drink plenty of water before, during, and after your workouts.
+                        </p>
+                        <p><strong>Nutrition:</strong> Focus on a balanced diet with a calorie deficit to support weight
+                            loss.</p>
+                        <p><strong>Consistency:</strong> Stick to your workout plan and stay active throughout the week.
+                        </p>
+                        <p><strong>Rest:</strong> Allow your body to recover by getting adequate sleep and taking rest
+                            days as needed.</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <div class="collapse content" id="wed-content">
+            <section>
+                <div class="container-fluid">
+                    <h1 style="text-align: center; font-weight: bold;">Strength Training Workout Plan</h1>
+
+                    <!-- <h2>Overview</h2>
+                    <p>This workout plan is designed to help you build strength through a combination of compound and
+                        isolation exercises. The plan is structured to target different muscle groups each day, focusing
+                        on heavy lifts and lower repetitions to maximize strength gains.</p> -->
+
+                    <h2 style="background-color: white;">Weekly Schedule</h2>
+
+                    <h3>Day 1: Chest & Triceps</h3>
+                    <ul>
+                        <li><strong>Bench Press:</strong> 4 sets of 4-6 reps</li>
+                        <li><strong>Incline Bench Press:</strong> 4 sets of 4-6 reps</li>
+                        <li><strong>Chest Dips:</strong> 3 sets of 6-8 reps</li>
+                        <li><strong>Skull Crushers:</strong> 3 sets of 6-8 reps</li>
+                        <li><strong>Tricep Pushdowns:</strong> 3 sets of 6-8 reps</li>
+                    </ul>
+
+                    <h3>Day 2: Back & Biceps</h3>
+                    <ul>
+                        <li><strong>Deadlift:</strong> 4 sets of 3-5 reps</li>
+                        <li><strong>Pull-Ups:</strong> 4 sets of 4-6 reps</li>
+                        <li><strong>Barbell Rows:</strong> 3 sets of 4-6 reps</li>
+                        <li><strong>Barbell Curls:</strong> 3 sets of 6-8 reps</li>
+                        <li><strong>Hammer Curls:</strong> 3 sets of 6-8 reps</li>
+                    </ul>
+
+                    <h3>Day 3: Rest or Active Recovery</h3>
+
+                    <h3>Day 4: Legs & Core</h3>
+                    <ul>
+                        <li><strong>Squats:</strong> 4 sets of 4-6 reps</li>
+                        <li><strong>Deadlifts:</strong> 4 sets of 3-5 reps</li>
+                        <li><strong>Leg Press:</strong> 3 sets of 6-8 reps</li>
+                        <li><strong>Calf Raises:</strong> 4 sets of 12-15 reps</li>
+                        <li><strong>Planks:</strong> 3 sets of 1-minute holds</li>
+                    </ul>
+
+                    <h3>Day 5: Shoulders & Abs</h3>
+                    <ul>
+                        <li><strong>Overhead Press:</strong> 4 sets of 4-6 reps</li>
+                        <li><strong>Lateral Raises:</strong> 4 sets of 6-8 reps</li>
+                        <li><strong>Front Raises:</strong> 3 sets of 6-8 reps</li>
+                        <li><strong>Shrugs:</strong> 3 sets of 6-8 reps</li>
+                        <li><strong>Hanging Leg Raises:</strong> 3 sets of 10-12 reps</li>
+                    </ul>
+
+                    <h3>Day 6: Full Body Workout</h3>
+                    <ul>
+                        <li><strong>Clean and Press:</strong> 4 sets of 4-6 reps</li>
+                        <li><strong>Pull-Ups:</strong> 3 sets of 4-6 reps</li>
+                        <li><strong>Push-Ups:</strong> 3 sets of 10-12 reps</li>
+                        <li><strong>Bodyweight Squats:</strong> 4 sets of 10-12 reps</li>
+                        <li><strong>Russian Twists:</strong> 3 sets of 15 reps per side</li>
+                    </ul>
+
+                    <h3>Day 7: Rest or Active Recovery</h3>
+
+                    <h2>Tips for Success</h2>
+                    <div class="tips">
+                        <p><strong>Warm-Up and Cool Down:</strong> Always warm up for 5-10 minutes before starting your
+                            workout and cool down for 5-10 minutes afterward.</p>
+                        <p><strong>Progressive Overload:</strong> Gradually increase the weight you lift to continue
+                            challenging your muscles.</p>
+                        <p><strong>Proper Form:</strong> Focus on maintaining proper form to avoid injuries and maximize
+                            muscle engagement.</p>
+                        <p><strong>Nutrition:</strong> Ensure you are consuming enough protein and calories to support
+                            muscle growth.</p>
+                        <p><strong>Rest:</strong> Allow your muscles to recover by getting adequate sleep and rest
+                            between workouts.</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    
+</section>
+    <!-- footer section ends -->
+
+    <script>
+        function showContent(contentId) {
+            // Hide all contents
+            var contents = document.querySelectorAll('.collapse');
+            contents.forEach(function (content) {
+                content.classList.remove('show');
+            });
+
+            // Show the selected content
+            var selectedContent = document.getElementById(contentId);
+            selectedContent.classList.add('show');
+        }
+    </script>
+
+</body>
+
+</html>

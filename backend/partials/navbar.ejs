@@ -1,0 +1,18 @@
+<nav class="navbar">
+    <% if(newUser){ %>
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="/userProfile/<%=newUser._id%>">User Profile</a>
+        <a href="/user/<%=newUser._id%>/plan">Workout Plans</a>
+        <a href="body(myFit).html" target="_self">Directory</a>
+        <a href="/user/<%=newUser._id%>/diet">Diet</a>
+        <% }else{ %>
+            <a href="/">Home</a>
+        <a href="#about">About</a>
+            <a href="/user/add">Sign In</a>
+            
+        <%  }%>
+     
+        
+      
+    </nav>

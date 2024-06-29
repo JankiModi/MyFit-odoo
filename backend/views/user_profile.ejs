@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="/css/style1.css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <a href="index1.html#home" class="logo"><span>MY</span>FIT</a>
+        <div id="menu-btn" class="fas fa-bars"> </div>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="/userProfile/<%=newUser._id%>">User Profile</a>
+            <a href="/user/<%=newUser._id%>/plan">Workout Plans</a>
+            <a href="/user/directory/body(myFit).html" target="_self">Directory</a>
+            <a href="/user/<%=newUser._id%>/diet">Diet</a>
+            </nav>
+    </header>
+<p>
+    <h1 style="color:white;margin-top: 10%;">Name : <%= newUser.name %></h1>
+    <h1 style="color:white;margin-top: 10%;">Age : <%= newUser.age %></h1>
+    <h1 style="color:white;margin-top: 10%;">Height : <%= newUser.height %></h1>
+    <h1 style="color:white;margin-top: 10%;">Weight : <%= newUser.weight %></h1>
+    <h1 style="color:white;margin-top: 10%;">email : <%= newUser.email %></h1>
+
+</p>
+</body>
+</html>

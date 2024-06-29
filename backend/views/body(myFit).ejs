@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="/css/style1.css">
+  <link rel="stylesheet" href="/css/main.js">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <script>
+    // /BODY SECTION /
+function ChangeBgImg(event, tooltipId, text, imgsrc) {
+    var tooltip = document.getElementById(tooltipId);
+
+    tooltip.style.top = (event.pageY - tooltip.clientHeight) + 'px';
+    tooltip.style.left = (event.pageX + 10) + 'px';
+
+
+    var x = document.getElementById('myImage');
+    x.src = imgsrc;
+}
+function ChangeBackToNormal(tooltipId) {
+    var tooltip = document.getElementById(tooltipId);
+
+    var x = document.getElementById('myImage');
+    x.src = "/images/final-front-body.png";
+}
+function ChangeBgImg2(event, tooltipId, text, imgsrc) {
+    var tooltip = document.getElementById(tooltipId);
+
+    tooltip.style.top = (event.pageY - tooltip.clientHeight) + 'px';
+    tooltip.style.left = (event.pageX + 10) + 'px';
+
+
+    var x = document.getElementById('myImage2');
+    x.src = imgsrc;
+}
+function ChangeBackToNormal2(tooltipId) {
+    var tooltip = document.getElementById(tooltipId);
+
+    var x = document.getElementById('myImage2');
+    x.src = "/images/pichu-body-removebg-preview (9).png";
+}
+function openAbs() {
+    window.location.href = 'abs.html';
+}
+function openChest() {
+    window.location.href = 'chest.html';
+}
+function openBiceps() {
+    window.location.href = 'biceps.html';
+}
+function openForeams() {
+    window.location.href = 'ForeArms.html';
+}
+function openShoulders() {
+    window.location.href = 'shoulders.html';
+}
+function openObliques() {
+    window.location.href = 'obliques.html';
+}
+function openQuads() {
+    window.location.href = 'quads.html';
+}
+function openCalf() {
+    window.location.href = 'calves.html';
+}
+function openGlutes() {
+    window.location.href = 'glutes.html';
+}
+function openHamstring() {
+    window.location.href = 'hamstrings.html';
+}
+function openTrapsMiddle() {
+    window.location.href = 'traps-middle.html';
+}
+function openTraps() {
+    window.location.href = 'traps.html';
+}
+function openLowerback() {
+    window.location.href = 'lowerback.html';
+}
+function openLats() {
+    window.location.href = 'lats.html';
+}
+function openTriceps() {
+    window.location.href = 'triceps.html';
+}
+  </script>
+
+  <!-- header section starts -->
+  <header class="header">
+    <a href="index1.html" class="logo"><span>MY</span>FIT</a>
+
+    <div id="menu-btn" class="fas fa-bars"> </div>
+    <nav class="navbar">
+      <a href="/">Home</a>
+      <a href="#about">About</a>
+      <a href="/userProfile/<%=newUser._id%>">User Profile</a>
+      <a href="/user/<%=newUser._id%>/plan">Workout Plans</a>
+      <a href="/user/directory/body(myFit).html" target="_self">Directory</a>
+      <a href="/user/<%=newUser._id%>/diet">Diet</a>
+      </nav>
+
+  </header>
+  <!-- header section ends -->
+
+  <section>
+    <div class="trial-tooltip" id="tooltip"></div>
+    <div style="position: relative;">
+      <img src="/images/final-front-body.png" id="myImage"
+        style="width:25%;height:  auto; margin-left: 15%; margin-top:8%">
+
+      <a href="/user/directory/abs"  return false;>
+        <div class="trial"
+          style="border-radius: 10px; position: absolute; left: 27.3%; top: 39.11%; width: 3.4%; height: 18%; cursor:pointer;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'abs', '/images/final-abs.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+
+
+
+      <a href="/user/directory/obliques"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute; left: 31.0%; top: 39%; width: 1.4%; height: 15%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'obliques', '/images/obliques.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/obliques"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute; left: 25.5%; top: 39%; width: 1.4%; height: 15%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'obliques', '/images/obliques.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/chest"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute; left: 25.3%; top: 33.78%; width: 7.2%; height: 7.8%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'chest', '/images/final-chest.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/biceps"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute; left: 22.3%; top: 38.11%; width: 2.4%; height: 8%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'biceps', '/images/final-biceps.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/biceps"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 33.3%; top: 38.11%; width: 2.4%; height: 8%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'biceps', '/images/final-biceps.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/ForeArms"  return false;">
+        <div class="trial"
+          style="border-radius: 10px;position: absolute; left: 20.3%; top: 45.11%; width: 2.1%; height: 8%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'foreams', '/images/final-forearms.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/ForeArms"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 35.5%; top: 45.11%; width: 2.1%; height: 8%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'foreams', '/images/final-forearms.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/shoulders"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 23.7%; top: 32.11%; width: 1.6%; height: 7.4%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'shoulders', '/images/final-shoulders.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/shoulders"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 32.5%; top: 32.11%; width: 1.6%; height: 7.4%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'shoulders', '/images/final-shoulders.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/quads"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 31.2%; top: 53.04%; width: 1.6%; height: 22.4%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'quads', '/images/final-quads.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/quads"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 25%; top: 54.04%; width: 1.6%; height: 22.4%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'quads', '/images/final-quads.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/quads"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 26.4%; top: 63.04%; width: 1.6%; height: 10.4%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'quads', '/images/final-quads.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+      <a href="/user/directory/quads" return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 30.2%; top: 63.8%; width: 1.6%; height: 10.4%;"
+          onmouseover="ChangeBgImg(event, 'tooltip', 'quads', '/images/final-quads.png')"
+          onmouseout="ChangeBackToNormal('tooltip')"></div>
+      </a>
+    </div>
+
+
+
+    <div style="position: relative;">
+      <img src="/images/pichu-body-removebg-preview (9).png" id="myImage2"
+        style="width:25%;height:  auto; margin-left: 55%; margin-top: -39%;">
+      <a href="/user/directory/calves"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;;left: 69.8%; top: -720.11%; width: 2.1%; height: 230%;"
+          onmouseover="ChangeBgImg2(event, 'tooltip', 'calf', '/images/calf-removebg-preview (1).png')"
+          onmouseout="ChangeBackToNormal2('tooltip')"></div>
+      </a>
+      <a href="/user/directory/calves"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 63.4%; top: -720.11%; width: 2.1%; height: 230%;"
+          onmouseover="ChangeBgImg2(event, 'tooltip', 'calf', '/images/calf-removebg-preview (1).png')"
+          onmouseout="ChangeBackToNormal2('tooltip')"></div>
+      </a>
+      <a href="/user/directory/glutes"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 65%; top: -1883.11%; width: 5%; height: 350%;"
+          onmouseover="ChangeBgImg2(event, 'tooltip', 'glutes', '/images/final-glutes.png')"
+          onmouseout="ChangeBackToNormal2('tooltip')"></div>
+      </a>
+      <a href="/user/directory/hamstrings"  return false;>
+        <div class="trial"
+          style="border-radius: 10px;position: absolute;left: 63.4%; top: -1500.11%; width: 3.3%; height: 600%;"
+          onmouseover="ChangeBgImg2(event, 'tooltip', 'hamstring', '/images/final-hamstring.png')"
+          onmouseout="ChangeBackToNormal2('tooltip')"></div>
+        <a href="/user/directory/hamstrings" return false;>
+          <div class="trial"
+            style="border-radius: 10px;position: absolute;left: 68.5%; top: -1500.11%; width:  3.3%; height: 600%;"
+            onmouseover="ChangeBgImg2(event, 'tooltip', 'hamstring', '/images/final-hamstring.png')"
+            onmouseout="ChangeBackToNormal2('tooltip')"></div>
+        </a>
+        <a href="/user/directory/traps-middle"  return false;>
+          <div class="trial"
+            style="border-radius: 10px;position: absolute;left: 66.7%; top: -2600.11%; width: 2.0%; height: 230%;"
+            onmouseover="ChangeBgImg2(event, 'tooltip', 'traps-middle', '/images/final-traps-middle.png')"
+            onmouseout="ChangeBackToNormal2('tooltip')"></div>
+        </a>
+
+        <a href="/user/directory/traps"  return false;>
+          <div class="trial"
+            style="border-radius: 10px;position: absolute;left: 65.7%; top: -2780.11%; width: 4.2%; height: 90%;"
+            onmouseover="ChangeBgImg2(event, 'tooltip', 'traps', '/images/final-traps.png')"
+            onmouseout="ChangeBackToNormal2('tooltip')"></div>
+        </a>
+        <a href="/user/directory/lowerback"  return false;>
+          <div class="trial"
+            style="border-radius: 10px;position: absolute;left: 66.5%; top: -2200.11%; width: 2.8%; height: 270%;"
+            onmouseover="ChangeBgImg2(event, 'tooltip', 'lowerback', '/images/final-lowerback.png')"
+            onmouseout="ChangeBackToNormal2('tooltip')"></div>
+        </a>
+        <a href="/user/directory/lats"  return false;>
+          <div class="trial"
+            style="border-radius: 10px;position: absolute;left: 64.2%; top: -2600.11%; width: 2%; height: 690%;"
+            onmouseover="ChangeBgImg2(event, 'tooltip', 'lats', '/images/final-lats.png')"
+            onmouseout="ChangeBackToNormal2('tooltip')"></div>
+        </a>
+        <a href="/user/directory/lats" return false;>
+          <div class="trial"
+            style="border-radius: 10px;position: absolute;left: 69.0%; top: -2600.11%; width: 2%; height: 690%;"
+            onmouseover="ChangeBgImg2(event, 'tooltip', 'lats', '/images/final-lats.png')"
+            onmouseout="ChangeBackToNormal2('tooltip')"></div>
+        </a>
+        <a href="/user/directory/triceps"  return false;>
+          <div class="trial"
+            style="border-radius: 10px;position: absolute;left: 61%; top: -2463.11%; width: 2.5%; height: 200%;"
+            onmouseover="ChangeBgImg2(event, 'tooltip', 'triceps', '/images/final-triceps.png')"
+            onmouseout="ChangeBackToNormal2('tooltip')"></div>
+        </a>
+        <a href="/user/directory/triceps"  return false;>
+          <div class="trial"
+            style="border-radius: 10px;position: absolute;left: 71.4%; top: -2463.11%; width: 2.5%; height: 200%;"
+            onmouseover="ChangeBgImg2(event, 'tooltip', 'triceps', '/images/final-triceps.png')"
+            onmouseout="ChangeBackToNormal2('tooltip')"></div>
+        </a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- js file link -->
+  
+
+  <!-- footer section starts -->
+  <section class="footer">
+    <div class="box-container">
+        <div class="box">
+      <h3>Quick Links</h3>    
+      <a class="links" href="index1.html">Home</a>
+      <a class="links" href="index1.html#about">About</a>
+      <a class='links' href="body(myFit).html">Directory</a>
+      <a class='links' href="diet.html">Diet</a>
+
+        
+    </div>
+
+        <div class="box">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-phone"></i>+919076534789</p>
+            <p><i class="fas fa-phone"></i>+919234526278</p>
+            <p><i class="fas fa-phone"></i>+919873356899</p>
+        </div>
+
+        <div class="box">
+            <h3>Follow us on</h3>
+            <div class="share">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer section ends -->
+</body>
+
+</html>
